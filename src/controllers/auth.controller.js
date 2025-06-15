@@ -11,6 +11,20 @@ class AuthController {
       res.status(400).json({ error: err.message });
     }
   }
+
+    async login(req, res) {
+    try {
+      const { username, password } = req.body;
+      if (!username || !password) {
+        return res.status(400).json({ error: 'Username e password são obrigatórios.' });
+      }
+
+      const result = await authService.loginUser({ username, password });
+      res.status(200).json(result);
+    } catch (err) {
+      res.status(401).json({ error: err.message });
+    }
+  }
 }
 
 module.exports = new AuthController();
