@@ -5,7 +5,10 @@ require('dotenv').config();
 const app = express();
 app.use(express.json());
 
-// Rota teste
+const authRoutes = require('./routes/auth.routes');
+app.use('/auth', authRoutes);
+
+// rota teste
 app.get('/', (req, res) => {
   res.send('API Task rodando...');
 });
