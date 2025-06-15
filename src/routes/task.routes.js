@@ -6,5 +6,7 @@ const authMiddleware = require('../middlewares/auth.middleware');
 router.use(authMiddleware); 
 
 router.post('/', (req, res) => taskController.create(req, res));
+router.get('/', (req, res) => taskController.list(req, res));
+router.patch('/:id/status', (req, res) => taskController.updateStatus(req, res));
 
 module.exports = router;

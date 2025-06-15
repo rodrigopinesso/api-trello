@@ -11,6 +11,27 @@ class TaskController {
       res.status(400).json({ error: err.message });
     }
   }
+
+  async list(req, res) {
+    try {
+      const tasks = await taskService.getAllTasks(req.user.id);
+      res.status(200).json(tasks);
+    } catch (err) {
+      res.status(500).json({ error: 'Erro ao buscar tarefas.' });
+    }
+  }
+
+  async updateStatus(req, res) {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+
+    const task = await taskService.updateStatus(id, req.user.id, status);
+    res.status(200).json(task);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+}
 }
 
 module.exports = new TaskController();
