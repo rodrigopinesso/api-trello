@@ -8,6 +8,9 @@ app.use(express.json());
 const authRoutes = require('./routes/auth.routes');
 app.use('/auth', authRoutes);
 
+const taskRoutes = require('./routes/task.routes');
+app.use('/tasks', taskRoutes);
+
 // rota teste
 app.get('/', (req, res) => {
   res.send('API Task rodando...');
