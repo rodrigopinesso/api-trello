@@ -1,4 +1,14 @@
 {
+  "name": "task-api",
+  "version": "1.0.0",
+  "description": "API REST para gerenciamento de tarefas (mini Trello)",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Rodrigo",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "dotenv": "^16.5.0",
