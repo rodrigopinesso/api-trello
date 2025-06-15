@@ -4,7 +4,7 @@
 Uma API completa para gerenciamento de tarefas (estilo Trello simplificado), com autenticação JWT, roles (`user`, `admin`, `moderator`), estrutura em camadas, DTOs e MongoDB.
 
 ---
-# Aluno
+## Aluno
 - Rodrigo Yaedu Pinesso RA:22014201-2
 ---
 ## 🚀 Tecnologias
