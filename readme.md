@@ -4,7 +4,9 @@
 Uma API completa para gerenciamento de tarefas (estilo Trello simplificado), com autenticação JWT, roles (`user`, `admin`, `moderator`), estrutura em camadas, DTOs e MongoDB.
 
 ---
-
+# Aluno
+- Rodrigo Yaedu Pinesso RA:22014201-2
+---
 ## 🚀 Tecnologias
 
 - **Node.js**
@@ -216,13 +218,3 @@ src/
 | admin      | Pode ver, editar e deletar qualquer user |
 
 ---
-
-## 📄 Licença
-
-Projeto livre para fins educacionais 🚀
-
----
-
-## 👨‍💻 Autor
-
-Feito por Rodrigo. Desenvolvido com fins acadêmicos e práticos para consolidar conhecimento em backend Node.js.
