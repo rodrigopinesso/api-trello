@@ -7,6 +7,12 @@ Uma API completa para gerenciamento de tarefas (estilo Trello simplificado), com
 ## Aluno
 - Rodrigo Yaedu Pinesso RA:22014201-2
 ---
+
+---
+## Link do vídeo no YouTube
+- https://www.youtube.com/watch?v=DqoHH65bEgg&ab_channel=RodrigoPinesso
+---
+
 ## 🚀 Tecnologias
 
 - **Node.js**
