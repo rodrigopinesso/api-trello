@@ -8,5 +8,6 @@ router.use(authMiddleware);
 router.post('/', (req, res) => taskController.create(req, res));
 router.get('/', (req, res) => taskController.list(req, res));
 router.patch('/:id/status', (req, res) => taskController.updateStatus(req, res));
+router.delete('/:id', (req, res) => taskController.delete(req, res));
 
 module.exports = router;

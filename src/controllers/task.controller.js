@@ -32,6 +32,16 @@ class TaskController {
     res.status(400).json({ error: err.message });
   }
 }
+
+async delete(req, res) {
+  try {
+    const { id } = req.params;
+    const result = await taskService.deleteTask(id, req.user.id);
+    res.status(200).json(result);
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+}
 }
 
 module.exports = new TaskController();

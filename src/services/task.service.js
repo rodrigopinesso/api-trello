@@ -34,6 +34,15 @@ class TaskService {
 
   return task;
 }
+
+async deleteTask(taskId, userId) {
+  const task = await Task.findOneAndDelete({ _id: taskId, userId });
+  if (!task) {
+    throw new Error('Tarefa não encontrada ou não pertence ao usuário.');
+  }
+
+  return { message: 'Tarefa deletada com sucesso.' };
+}
 }
 
 module.exports = new TaskService();
