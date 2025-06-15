@@ -11,6 +11,9 @@ app.use('/auth', authRoutes);
 const taskRoutes = require('./routes/task.routes');
 app.use('/tasks', taskRoutes);
 
+const userRoutes = require('./routes/user.routes');
+app.use('/users', userRoutes);
+
 // rota teste
 app.get('/', (req, res) => {
   res.send('API Task rodando...');

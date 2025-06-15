@@ -14,9 +14,10 @@ class AuthService {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const user = new User({
-      username,
-      password: hashedPassword
-    });
+  username,
+  password: hashedPassword,
+  role: registerUserDTO.role // agora recebe do DTO
+});
 
     await user.save();
     return { id: user._id, username: user.username, role: user.role };
