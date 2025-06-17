@@ -6,9 +6,12 @@ Uma API completa para gerenciamento de tarefas (estilo Trello simplificado), com
 ---
 ## Aluno
 - Rodrigo Yaedu Pinesso RA:22014201-2
+- Murilo Alves Pereira Varoto RA:22215190-2 
+- Gustavo dos Santos Arnoni RA:22014037-2
+- Gustavo Henrique Cordeiro Mesquita RA:21099392-2
+- Vitor Eiji Goto RA:22145232-2
 ---
 
----
 ## Link do vídeo no YouTube
 - https://www.youtube.com/watch?v=DqoHH65bEgg&ab_channel=RodrigoPinesso
 ---
